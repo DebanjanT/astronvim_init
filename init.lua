@@ -6,7 +6,8 @@ if not (vim.env.LAZY or (vim.uv or vim.loop).fs_stat(lazypath)) then
   vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", lazypath })
 end
 vim.opt.rtp:prepend(lazypath)
-vim.o.guifont = "Menlo:h16"
+-- vim.o.guifont = "CaskaydiaCove Nerd Font:h16"
+vim.o.guifont = "DroidSansM Nerd Font Mono:h16"
 -- validate that lazy is available
 if not pcall(require, "lazy") then
   -- stylua: ignore
